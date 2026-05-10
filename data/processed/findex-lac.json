@@ -1,0 +1,270 @@
+{
+  "countries": [
+    {
+      "iso": "DO",
+      "country_es": "República Dominicana",
+      "country_en": "Dominican Republic",
+      "highlight": true,
+      "values": [
+        {
+          "year": 2011,
+          "value": 38.2
+        },
+        {
+          "year": 2014,
+          "value": 54.09
+        },
+        {
+          "year": 2017,
+          "value": 56.24
+        },
+        {
+          "year": 2021,
+          "value": 51.3
+        }
+      ],
+      "change_2017_2021": -4.94
+    },
+    {
+      "iso": "BR",
+      "country_es": "Brasil",
+      "country_en": "Brazil",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 55.86
+        },
+        {
+          "year": 2014,
+          "value": 68.12
+        },
+        {
+          "year": 2017,
+          "value": 70.04
+        },
+        {
+          "year": 2021,
+          "value": 84.04
+        }
+      ],
+      "change_2017_2021": 14.0
+    },
+    {
+      "iso": "AR",
+      "country_es": "Argentina",
+      "country_en": "Argentina",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 33.13
+        },
+        {
+          "year": 2014,
+          "value": 50.2
+        },
+        {
+          "year": 2017,
+          "value": 48.71
+        },
+        {
+          "year": 2021,
+          "value": 71.63
+        }
+      ],
+      "change_2017_2021": 22.92
+    },
+    {
+      "iso": "CL",
+      "country_es": "Chile",
+      "country_en": "Chile",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 42.18
+        },
+        {
+          "year": 2014,
+          "value": 63.26
+        },
+        {
+          "year": 2017,
+          "value": 74.35
+        },
+        {
+          "year": 2021,
+          "value": 87.06
+        }
+      ],
+      "change_2017_2021": 12.71
+    },
+    {
+      "iso": "CO",
+      "country_es": "Colombia",
+      "country_en": "Colombia",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 30.43
+        },
+        {
+          "year": 2014,
+          "value": 39.0
+        },
+        {
+          "year": 2017,
+          "value": 45.76
+        },
+        {
+          "year": 2021,
+          "value": 59.72
+        }
+      ],
+      "change_2017_2021": 13.96
+    },
+    {
+      "iso": "MX",
+      "country_es": "México",
+      "country_en": "Mexico",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 27.43
+        },
+        {
+          "year": 2014,
+          "value": 39.14
+        },
+        {
+          "year": 2017,
+          "value": 36.04
+        }
+      ]
+    },
+    {
+      "iso": "PE",
+      "country_es": "Perú",
+      "country_en": "Peru",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 20.46
+        },
+        {
+          "year": 2014,
+          "value": 28.98
+        },
+        {
+          "year": 2017,
+          "value": 42.6
+        },
+        {
+          "year": 2021,
+          "value": 57.5
+        }
+      ],
+      "change_2017_2021": 14.9
+    },
+    {
+      "iso": "UY",
+      "country_es": "Uruguay",
+      "country_en": "Uruguay",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 23.54
+        },
+        {
+          "year": 2014,
+          "value": 45.59
+        },
+        {
+          "year": 2017,
+          "value": 63.87
+        },
+        {
+          "year": 2021,
+          "value": 74.13
+        }
+      ],
+      "change_2017_2021": 10.26
+    },
+    {
+      "iso": "CR",
+      "country_es": "Costa Rica",
+      "country_en": "Costa Rica",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 50.36
+        },
+        {
+          "year": 2014,
+          "value": 64.55
+        },
+        {
+          "year": 2017,
+          "value": 67.84
+        },
+        {
+          "year": 2021,
+          "value": 68.49
+        }
+      ],
+      "change_2017_2021": 0.65
+    },
+    {
+      "iso": "PA",
+      "country_es": "Panamá",
+      "country_en": "Panama",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 24.93
+        },
+        {
+          "year": 2014,
+          "value": 43.66
+        },
+        {
+          "year": 2017,
+          "value": 46.49
+        },
+        {
+          "year": 2021,
+          "value": 44.97
+        }
+      ],
+      "change_2017_2021": -1.52
+    },
+    {
+      "iso": "PY",
+      "country_es": "Paraguay",
+      "country_en": "Paraguay",
+      "highlight": false,
+      "values": [
+        {
+          "year": 2011,
+          "value": 21.72
+        },
+        {
+          "year": 2017,
+          "value": 48.65
+        },
+        {
+          "year": 2021,
+          "value": 54.42
+        }
+      ],
+      "change_2017_2021": 5.77
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+/* financial-inclusion story overrides */
+
+.beat-hed {
+  font-family: Georgia, serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.25;
+  margin: 2.5rem 0 0.85rem;
+}
+
+.story-body .beat-hed:first-child {
+  margin-top: 0.5rem;
+}
+
+.methodology-note {
+  font-size: 0.83rem;
+  color: #777;
+  line-height: 1.65;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 1.25rem;
+  margin-top: 2rem;
+  max-width: 65ch;
+}
