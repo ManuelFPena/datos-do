@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Último pero mejorando — datos.do</title>
+  <link rel="stylesheet" href="../../shared/style.css">
+</head>
+<body>
+  <header class="story-header">
+    <a href="../../index.html" class="back-link">← datos.do</a>
+    <div class="dek">Educación · PISA</div>
+    <h1>Último, pero mejorando</h1>
+    <p class="subhed">En PISA 2018, la República Dominicana quedó en los últimos lugares de América Latina. En 2022, fue el único país de la región que mejoró en matemáticas, lectura y ciencias.</p>
+    <p class="byline">Manuel F. Peña · 2024</p>
+  </header>
+
+  <section class="story-body">
+    <p>Cuando la República Dominicana participó por primera vez en PISA en 2015, los resultados confirmaron lo que muchos sospechaban: el sistema educativo producía aprendizajes muy por debajo del promedio regional y muy lejos del promedio OCDE.</p>
+    <p>En 2018, la situación empeoró. El país quedó en el lugar 76 de 79 en lectura. Las expectativas para 2022 eran bajas. Lo que ocurrió fue inesperado: la República Dominicana fue el único país de América Latina que mejoró simultáneamente en matemáticas (+14 puntos), lectura (+15) y ciencias (+25).</p>
+    <p>El gráfico muestra la trayectoria de cada país participante de América Latina y el Caribe entre 2018 y 2022. La República Dominicana es la única línea que sube en todos los sujetos. Los demás, en su mayoría, cayeron.</p>
+  </section>
+
+  <section class="chart-section">
+    <div id="chart-container"></div>
+    <p class="chart-note">Fuente: OCDE PISA 2022. Solo países de América Latina y el Caribe con datos disponibles para 2018 y 2022. Se muestra puntaje promedio en lectura.</p>
+  </section>
+
+  <script type="module">
+    import { drawChart } from './chart.js';
+
+    const res = await fetch('../../data/processed/pisa-lac-scores.json');
+    const data = await res.json();
+    drawChart(document.getElementById('chart-container'), data);
+  </script>
+</body>
+</html>

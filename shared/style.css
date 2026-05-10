@@ -1,0 +1,245 @@
+/* datos.do — global styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text-primary:   #1a1a1a;
+  --text-secondary: #555555;
+  --text-muted:     #888888;
+  --border-light:   #e5e5e5;
+  --bg:             #ffffff;
+  --bg-alt:         #f7f7f5;
+  --accent-spending: #c0392b;
+  --accent-pisa:     #2c4f8c;
+  --max-width: 720px;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--bg);
+}
+
+/* ── Layout ── */
+
+.page-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ── Navigation / back link ── */
+
+.back-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+}
+
+/* ── Story header ── */
+
+.story-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 2rem;
+}
+
+.dek {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.story-header h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.subhed {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  max-width: 60ch;
+}
+
+.byline {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* ── Story body ── */
+
+.story-body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+}
+
+.story-body p {
+  margin-bottom: 1.25rem;
+  max-width: 65ch;
+}
+
+.story-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Chart section ── */
+
+.chart-section {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  padding: 0 1.25rem;
+}
+
+#chart-container {
+  width: 100%;
+  background: var(--bg);
+}
+
+.chart-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  line-height: 1.4;
+}
+
+/* ── Homepage ── */
+
+.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.25rem 2.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.site-header .wordmark {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.site-header .tagline {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.story-index {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.story-index h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.story-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.story-card {
+  border-top: 2px solid var(--border-light);
+  padding-top: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: border-color 0.15s;
+}
+
+.story-card:hover {
+  border-color: var(--text-primary);
+}
+
+.story-card .card-dek {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.story-card h3 {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.story-card .card-summary {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 55ch;
+}
+
+/* ── D3 chart defaults ── */
+
+.axis path,
+.axis line {
+  stroke: var(--border-light);
+}
+
+.axis text {
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  fill: #666;
+}
+
+.axis .domain {
+  display: none;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  .story-header {
+    padding-top: 2rem;
+  }
+
+  .chart-section {
+    padding: 0 0.75rem;
+  }
+}

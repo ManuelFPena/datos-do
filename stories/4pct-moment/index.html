@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El momento del 4% — datos.do</title>
+  <link rel="stylesheet" href="../../shared/style.css">
+</head>
+<body>
+  <header class="story-header">
+    <a href="../../index.html" class="back-link">← datos.do</a>
+    <div class="dek">Educación · Gasto público</div>
+    <h1>El momento del 4%</h1>
+    <p class="subhed">Una ley que existió durante 15 años sin cumplirse. En 2013, el gasto en educación se duplicó de golpe — ¿qué pasó, y qué cambió?</p>
+    <p class="byline">Manuel F. Peña · 2024</p>
+  </header>
+
+  <section class="story-body">
+    <p>En 1997, la República Dominicana aprobó la Ley 66-97, que obligaba al Estado a destinar el 4% del PIB a la educación. Durante los siguientes 15 años, esa ley fue ignorada. El país gastaba menos de 2% del PIB — en algunos años, apenas 0.77%.</p>
+    <p>En 2013, tras años de presión de la sociedad civil y un movimiento ciudadano sin precedentes, el mandato fue aplicado por primera vez. El presupuesto del MINERD casi se duplicó en un año.</p>
+    <p>El gráfico muestra la evolución del gasto en educación como porcentaje del PIB desde 1970. La línea discontinua marca el umbral del 4%. El área sombreada señala el período posterior a la aplicación de la ley.</p>
+  </section>
+
+  <section class="chart-section">
+    <div id="chart-container"></div>
+    <p class="chart-note">Fuente: World Bank EdStats — Indicador SE.XPD.TOTL.GD.ZS. Gasto público total en educación como % del PIB.</p>
+  </section>
+
+  <script type="module">
+    import { drawChart } from './chart.js';
+
+    const res = await fetch('../../data/processed/spending-gdp.json');
+    const data = await res.json();
+    drawChart(document.getElementById('chart-container'), data);
+  </script>
+</body>
+</html>
