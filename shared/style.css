@@ -395,9 +395,10 @@ body {
   width: fit-content;
 }
 
-.story-badge--educacion  { color: #1a5276; }
-.story-badge--economia   { color: #27ae60; }
-.story-badge--transporte { color: #e67e22; }
+.story-badge--educacion    { color: #1a5276; }
+.story-badge--economia     { color: #27ae60; }
+.story-badge--transporte   { color: #e67e22; }
+.story-badge--desigualdad  { color: #8e44ad; }
 
 .story-content {
   min-width: 0;
