@@ -256,12 +256,13 @@ body {
 }
 
 .methodology-note li {
-  font-size: 0.83rem;
-  color: #777;
-  line-height: 1.6;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #888;
+  line-height: 1.55;
   padding-left: 1.1rem;
   position: relative;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
 }
 
 .methodology-note li::before {
@@ -270,6 +271,11 @@ body {
   left: 0;
   color: var(--text-muted);
   font-weight: 700;
+  font-style: normal;
+}
+
+.methodology-note li strong {
+  font-style: normal;
 }
 
 /* ── Responsive ── */
