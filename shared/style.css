@@ -143,6 +143,30 @@ body {
   text-decoration-color: var(--text-muted);
 }
 
+/* ── Chart headlines (McKinsey-style insight titles) ── */
+
+.chart-headline {
+  max-width: 900px;
+  margin: 0 auto 0.75rem;
+  padding: 0 1.25rem;
+}
+
+.chart-title {
+  font-family: Georgia, serif;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+}
+
+.chart-subhead {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
 /* ── Homepage ── */
 
 .site-header {
