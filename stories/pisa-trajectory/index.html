@@ -7,8 +7,16 @@
   <link rel="stylesheet" href="../../shared/style.css">
 </head>
 <body>
+
+  <nav class="site-nav">
+    <a href="../../index.html" class="nav-logo">datos.do</a>
+    <div class="nav-links">
+      <a href="../../index.html">Inicio</a>
+      <a href="../../about.html">Sobre</a>
+    </div>
+  </nav>
+
   <header class="story-header">
-    <a href="../../index.html" class="back-link">← datos.do</a>
     <div class="dek">Educación · PISA</div>
     <h1>Último, pero mejorando</h1>
     <p class="subhed">En PISA 2018, la República Dominicana quedó en los últimos lugares de América Latina. En 2022, fue el único país de la región que mejoró en matemáticas, lectura y ciencias.</p>
@@ -27,6 +35,15 @@
   </section>
 
   <section class="story-body">
+    <p>El siguiente gráfico muestra los puntajes en lectura de cada país en 2018 y 2022, comparados directamente. Los países están agrupados según la dirección de su cambio: a la izquierda los que mejoraron, a la derecha los que cayeron. La República Dominicana lidera el grupo de los que avanzaron.</p>
+  </section>
+
+  <section class="chart-section">
+    <div id="chart-2"></div>
+    <p class="chart-note">Fuente: OCDE PISA 2022 · Puntaje promedio en lectura por país · El eje Y comienza en 300 puntos para destacar las diferencias · Barras izquierdas: 2018 · Barras derechas: 2022</p>
+  </section>
+
+  <section class="story-body">
     <div class="methodology-note">
       <p class="sources-label">Fuentes y metodología</p>
       <ul>
@@ -38,11 +55,12 @@
   </section>
 
   <script type="module">
-    import { drawChart } from './chart.js';
+    import { drawChart, drawChart2 } from './chart.js';
 
     const res = await fetch('../../data/processed/pisa-lac-scores.json');
     const data = await res.json();
     drawChart(document.getElementById('chart-container'), data);
+    drawChart2(document.getElementById('chart-2'), data);
   </script>
 </body>
 </html>

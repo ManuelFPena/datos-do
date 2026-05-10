@@ -3,47 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>datos.do — Periodismo de datos sobre educación en RD</title>
+  <title>datos.do — Visualizaciones de datos sobre la República Dominicana</title>
   <link rel="stylesheet" href="shared/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="index.html" class="wordmark">datos.do</a>
-    <p class="tagline">Periodismo de datos sobre educación en la República Dominicana</p>
-  </header>
 
-  <main class="story-index">
-    <h2>Historias</h2>
-    <ul class="story-list">
-      <li>
-        <a href="stories/4pct-moment/index.html" class="story-card">
-          <div class="card-dek">Gasto público · 1970–2023</div>
-          <h3>El momento del 4%</h3>
-          <p class="card-summary">Una ley que existió durante 15 años sin cumplirse. En 2013, el gasto en educación se duplicó de golpe — la historia detrás del número.</p>
-        </a>
-      </li>
-      <li>
-        <a href="stories/pisa-trajectory/index.html" class="story-card">
-          <div class="card-dek">PISA · América Latina 2018–2022</div>
-          <h3>Último, pero mejorando</h3>
-          <p class="card-summary">La República Dominicana fue el único país de América Latina que mejoró en matemáticas, lectura y ciencias entre PISA 2018 y PISA 2022.</p>
-        </a>
-      </li>
-      <li>
-        <a href="stories/financial-inclusion/index.html" class="story-card">
-          <div class="card-dek">Economía · 2025</div>
-          <h3>Más Rica, Menos Bancarizada</h3>
-          <p class="card-summary">La RD creció un 5% en 2024. Sin embargo, menos adultos tienen cuenta bancaria que en 2017.</p>
-        </a>
-      </li>
-      <li>
-        <a href="stories/traffic/index.html" class="story-card">
-          <div class="card-dek">Transporte · 2025</div>
-          <h3>Campeones del Mundo en lo Peor</h3>
-          <p class="card-summary">La República Dominicana tiene la tasa de mortalidad vial más alta del mundo: 64.6 muertes por cada 100,000 habitantes — más del doble que el segundo lugar.</p>
-        </a>
-      </li>
-    </ul>
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">datos.do</a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre</a>
+    </div>
+  </nav>
+
+  <section class="home-intro">
+    <h1 class="site-name">datos.do</h1>
+    <p class="site-tagline">Visualizaciones de datos sobre la República Dominicana. Historias cortas, números reales, contexto latinoamericano.</p>
+  </section>
+
+  <main class="stories-list">
+
+    <div class="story-row">
+      <div class="story-meta">
+        <span class="story-date">2025</span>
+        <span class="story-badge story-badge--educacion">Educación</span>
+      </div>
+      <div class="story-content">
+        <h2 class="story-title"><a href="stories/4pct-moment/index.html">El Momento del 4%</a></h2>
+        <p class="story-authors">Manuel Fernández</p>
+        <p class="story-desc">Una ley que obligaba a destinar el 4% del PIB a la educación existió durante 15 años sin cumplirse. ¿Qué pasó cuando finalmente se hizo cumplir en 2013?</p>
+      </div>
+      <div class="story-thumb">
+        <svg viewBox="0 0 180 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="33" x2="170" y2="33" stroke="#1a5276" stroke-width="1" stroke-dasharray="5 3" opacity="0.35"/>
+          <polyline points="10,86 35,85 58,83 75,81 88,79 98,79 107,35 128,30 150,27 170,25"
+            stroke="#1a5276" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="107" cy="35" r="3.5" fill="#1a5276"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="story-row">
+      <div class="story-meta">
+        <span class="story-date">2025</span>
+        <span class="story-badge story-badge--educacion">Educación</span>
+      </div>
+      <div class="story-content">
+        <h2 class="story-title"><a href="stories/pisa-trajectory/index.html">Últimos, Pero Mejorando</a></h2>
+        <p class="story-authors">Manuel Fernández</p>
+        <p class="story-desc">La RD quedó de últimos en PISA 2018. En 2022, fue el único país de América Latina en mejorar en matemáticas, lectura y ciencias.</p>
+      </div>
+      <div class="story-thumb">
+        <svg viewBox="0 0 180 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="38" y1="30" x2="142" y2="50" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="38" y1="42" x2="142" y2="62" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="38" y1="54" x2="142" y2="72" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="38" y1="65" x2="142" y2="82" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="38" y1="76" x2="142" y2="90" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="38" y1="90" x2="142" y2="58" stroke="#2c4f8c" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="38" cy="90" r="3.5" fill="#2c4f8c"/>
+          <circle cx="142" cy="58" r="3.5" fill="#2c4f8c"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="story-row">
+      <div class="story-meta">
+        <span class="story-date">2025</span>
+        <span class="story-badge story-badge--economia">Economía</span>
+      </div>
+      <div class="story-content">
+        <h2 class="story-title"><a href="stories/financial-inclusion/index.html">Más Rica, Menos Bancarizada</a></h2>
+        <p class="story-authors">Manuel Fernández</p>
+        <p class="story-desc">La economía dominicana creció un 5% en 2024. Sin embargo, la proporción de adultos con cuenta bancaria cayó de 56% en 2017 a 51% en 2021.</p>
+      </div>
+      <div class="story-thumb">
+        <svg viewBox="0 0 180 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="20" y1="92" x2="160" y2="92" stroke="#e5e5e5" stroke-width="1"/>
+          <rect x="38" y="22" width="38" height="70" fill="#27ae60" rx="2" opacity="0.85"/>
+          <text x="57" y="17" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#27ae60" font-weight="700">↑</text>
+          <rect x="104" y="54" width="38" height="38" fill="#27ae60" rx="2" opacity="0.32"/>
+          <text x="123" y="49" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#27ae60" opacity="0.65">↓</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="story-row">
+      <div class="story-meta">
+        <span class="story-date">2025</span>
+        <span class="story-badge story-badge--transporte">Transporte</span>
+      </div>
+      <div class="story-content">
+        <h2 class="story-title"><a href="stories/traffic/index.html">Campeones del Mundo en lo Peor</a></h2>
+        <p class="story-authors">Manuel Fernández</p>
+        <p class="story-desc">La República Dominicana tiene la tasa de muertes en tránsito más alta del planeta. 5.8 millones de vehículos, la mitad motos, y carreteras que no crecieron.</p>
+      </div>
+      <div class="story-thumb">
+        <svg viewBox="0 0 180 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15" y1="92" x2="170" y2="92" stroke="#e5e5e5" stroke-width="1"/>
+          <line x1="32" y1="62" x2="32" y2="92" stroke="#ccc" stroke-width="1.5"/>
+          <circle cx="32" cy="62" r="4" fill="#ccc"/>
+          <line x1="57" y1="68" x2="57" y2="92" stroke="#ccc" stroke-width="1.5"/>
+          <circle cx="57" cy="68" r="4" fill="#ccc"/>
+          <line x1="82" y1="73" x2="82" y2="92" stroke="#ccc" stroke-width="1.5"/>
+          <circle cx="82" cy="73" r="4" fill="#ccc"/>
+          <line x1="107" y1="77" x2="107" y2="92" stroke="#ccc" stroke-width="1.5"/>
+          <circle cx="107" cy="77" r="4" fill="#ccc"/>
+          <line x1="132" y1="80" x2="132" y2="92" stroke="#ccc" stroke-width="1.5"/>
+          <circle cx="132" cy="80" r="4" fill="#ccc"/>
+          <line x1="157" y1="12" x2="157" y2="92" stroke="#e67e22" stroke-width="2"/>
+          <circle cx="157" cy="12" r="5.5" fill="#e67e22"/>
+        </svg>
+      </div>
+    </div>
+
   </main>
+
+  <footer class="site-footer">
+    datos.do · Visualizaciones de datos sobre la República Dominicana · Manuel Fernández · 2025
+  </footer>
+
 </body>
 </html>

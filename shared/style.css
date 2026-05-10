@@ -278,7 +278,207 @@ body {
   font-style: normal;
 }
 
+/* ── Global nav bar ── */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #1a3a4a;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.nav-logo {
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.nav-logo:hover {
+  opacity: 0.85;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* ── Homepage intro ── */
+
+.home-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 1.75rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.site-name {
+  font-family: Georgia, serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.site-tagline {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 55ch;
+  margin-top: 0.4rem;
+}
+
+/* ── Stories list (distill-style) ── */
+
+.stories-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.story-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 180px;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0;
+}
+
+.story-row + .story-row {
+  border-top: 1px solid #e8e8e8;
+}
+
+.story-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.15rem;
+}
+
+.story-date {
+  font-size: 0.78rem;
+  color: #888;
+  font-variant-numeric: tabular-nums;
+}
+
+.story-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid currentColor;
+  padding: 2px 6px;
+  border-radius: 2px;
+  width: fit-content;
+}
+
+.story-badge--educacion  { color: #1a5276; }
+.story-badge--economia   { color: #27ae60; }
+.story-badge--transporte { color: #e67e22; }
+
+.story-content {
+  min-width: 0;
+}
+
+.story-title {
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.story-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.story-title a:hover {
+  text-decoration: underline;
+}
+
+.story-authors {
+  font-size: 0.78rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.story-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.story-thumb {
+  width: 180px;
+  height: 110px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.story-thumb svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Site footer ── */
+
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #999;
+}
+
 /* ── Responsive ── */
+
+@media (max-width: 680px) {
+  .story-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .story-thumb {
+    display: none;
+  }
+
+  .story-meta {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
 
 @media (max-width: 600px) {
   .story-header {
