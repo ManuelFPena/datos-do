@@ -1,0 +1,351 @@
+{
+  "countries": [
+    {
+      "iso": "DO",
+      "country_es": "República Dominicana",
+      "country_en": "Dominican Republic",
+      "highlight": true,
+      "scores": [
+        {
+          "year": 2015,
+          "math": 328,
+          "reading": 358,
+          "science": 332
+        },
+        {
+          "year": 2018,
+          "math": 325,
+          "reading": 342,
+          "science": 336
+        },
+        {
+          "year": 2022,
+          "math": 339,
+          "reading": 357,
+          "science": 361
+        }
+      ],
+      "change_2018_2022": {
+        "math": 14,
+        "reading": 15,
+        "science": 25
+      }
+    },
+    {
+      "iso": "CL",
+      "country_es": "Chile",
+      "country_en": "Chile",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 418,
+          "reading": 452,
+          "science": 444
+        },
+        {
+          "year": 2022,
+          "math": 412,
+          "reading": 448,
+          "science": 444
+        }
+      ],
+      "change_2018_2022": {
+        "math": -6,
+        "reading": -4,
+        "science": 0
+      }
+    },
+    {
+      "iso": "CR",
+      "country_es": "Costa Rica",
+      "country_en": "Costa Rica",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 426,
+          "reading": 426,
+          "science": 420
+        },
+        {
+          "year": 2022,
+          "math": 411,
+          "reading": 415,
+          "science": 411
+        }
+      ],
+      "change_2018_2022": {
+        "math": -15,
+        "reading": -11,
+        "science": -9
+      }
+    },
+    {
+      "iso": "UY",
+      "country_es": "Uruguay",
+      "country_en": "Uruguay",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 418,
+          "reading": 427,
+          "science": 438
+        },
+        {
+          "year": 2022,
+          "math": 409,
+          "reading": 421,
+          "science": 426
+        }
+      ],
+      "change_2018_2022": {
+        "math": -9,
+        "reading": -6,
+        "science": -12
+      }
+    },
+    {
+      "iso": "MX",
+      "country_es": "México",
+      "country_en": "Mexico",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 409,
+          "reading": 420,
+          "science": 419
+        },
+        {
+          "year": 2022,
+          "math": 395,
+          "reading": 415,
+          "science": 410
+        }
+      ],
+      "change_2018_2022": {
+        "math": -14,
+        "reading": -5,
+        "science": -9
+      }
+    },
+    {
+      "iso": "PE",
+      "country_es": "Perú",
+      "country_en": "Peru",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 400,
+          "reading": 401,
+          "science": 404
+        },
+        {
+          "year": 2022,
+          "math": 391,
+          "reading": 408,
+          "science": 403
+        }
+      ],
+      "change_2018_2022": {
+        "math": -9,
+        "reading": 7,
+        "science": -1
+      }
+    },
+    {
+      "iso": "CO",
+      "country_es": "Colombia",
+      "country_en": "Colombia",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 391,
+          "reading": 412,
+          "science": 413
+        },
+        {
+          "year": 2022,
+          "math": 383,
+          "reading": 409,
+          "science": 410
+        }
+      ],
+      "change_2018_2022": {
+        "math": -8,
+        "reading": -3,
+        "science": -3
+      }
+    },
+    {
+      "iso": "BR",
+      "country_es": "Brasil",
+      "country_en": "Brazil",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 384,
+          "reading": 413,
+          "science": 404
+        },
+        {
+          "year": 2022,
+          "math": 379,
+          "reading": 410,
+          "science": 403
+        }
+      ],
+      "change_2018_2022": {
+        "math": -5,
+        "reading": -3,
+        "science": -1
+      }
+    },
+    {
+      "iso": "AR",
+      "country_es": "Argentina",
+      "country_en": "Argentina",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 379,
+          "reading": 402,
+          "science": 404
+        },
+        {
+          "year": 2022,
+          "math": 378,
+          "reading": 401,
+          "science": 406
+        }
+      ],
+      "change_2018_2022": {
+        "math": -1,
+        "reading": -1,
+        "science": 2
+      }
+    },
+    {
+      "iso": "JM",
+      "country_es": "Jamaica",
+      "country_en": "Jamaica",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2022,
+          "math": 360,
+          "reading": 373,
+          "science": 371
+        }
+      ]
+    },
+    {
+      "iso": "PA",
+      "country_es": "Panamá",
+      "country_en": "Panama",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 353,
+          "reading": 377,
+          "science": 365
+        },
+        {
+          "year": 2022,
+          "math": 360,
+          "reading": 390,
+          "science": 382
+        }
+      ],
+      "change_2018_2022": {
+        "math": 7,
+        "reading": 13,
+        "science": 17
+      }
+    },
+    {
+      "iso": "SV",
+      "country_es": "El Salvador",
+      "country_en": "El Salvador",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2022,
+          "math": 343,
+          "reading": 370,
+          "science": 359
+        }
+      ]
+    },
+    {
+      "iso": "PY",
+      "country_es": "Paraguay",
+      "country_en": "Paraguay",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2018,
+          "math": 326,
+          "reading": 370,
+          "science": 358
+        },
+        {
+          "year": 2022,
+          "math": 337,
+          "reading": 374,
+          "science": 368
+        }
+      ],
+      "change_2018_2022": {
+        "math": 11,
+        "reading": 4,
+        "science": 10
+      }
+    },
+    {
+      "iso": "GT",
+      "country_es": "Guatemala",
+      "country_en": "Guatemala",
+      "highlight": false,
+      "scores": [
+        {
+          "year": 2022,
+          "math": 334,
+          "reading": 370,
+          "science": 359
+        }
+      ]
+    }
+  ],
+  "oecd_reference": [
+    {
+      "year": 2018,
+      "math": 489,
+      "reading": 487,
+      "science": 489
+    },
+    {
+      "year": 2022,
+      "math": 472,
+      "reading": 476,
+      "science": 485
+    }
+  ],
+  "subjects": [
+    "math",
+    "reading",
+    "science"
+  ],
+  "years": [
+    2015,
+    2018,
+    2022
+  ]
+}

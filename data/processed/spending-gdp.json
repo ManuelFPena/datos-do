@@ -1,0 +1,113 @@
+[
+  {
+    "year": 1970,
+    "value": 2.641
+  },
+  {
+    "year": 1982,
+    "value": 1.539
+  },
+  {
+    "year": 1983,
+    "value": 1.464
+  },
+  {
+    "year": 1984,
+    "value": 1.335
+  },
+  {
+    "year": 1985,
+    "value": 1.21
+  },
+  {
+    "year": 1993,
+    "value": 0.774,
+    "annotation": "Historic low \u2014 0.77% of GDP"
+  },
+  {
+    "year": 1994,
+    "value": 0.893
+  },
+  {
+    "year": 1995,
+    "value": 1.033
+  },
+  {
+    "year": 1996,
+    "value": 1.227
+  },
+  {
+    "year": 2000,
+    "value": 1.888
+  },
+  {
+    "year": 2001,
+    "value": 1.968
+  },
+  {
+    "year": 2002,
+    "value": 1.914
+  },
+  {
+    "year": 2003,
+    "value": 1.845
+  },
+  {
+    "year": 2007,
+    "value": 2.047
+  },
+  {
+    "year": 2010,
+    "value": 1.887
+  },
+  {
+    "year": 2011,
+    "value": 1.879
+  },
+  {
+    "year": 2013,
+    "value": 3.628,
+    "annotation": "4% mandate finally enforced"
+  },
+  {
+    "year": 2014,
+    "value": 3.622
+  },
+  {
+    "year": 2015,
+    "value": 3.604
+  },
+  {
+    "year": 2016,
+    "value": 3.85
+  },
+  {
+    "year": 2017,
+    "value": 3.92
+  },
+  {
+    "year": 2018,
+    "value": 3.928
+  },
+  {
+    "year": 2019,
+    "value": 4.043
+  },
+  {
+    "year": 2020,
+    "value": 4.518,
+    "annotation": "Highest ever \u2014 4.52% (pandemic year)"
+  },
+  {
+    "year": 2021,
+    "value": 3.58
+  },
+  {
+    "year": 2022,
+    "value": 3.611
+  },
+  {
+    "year": 2023,
+    "value": 3.761
+  }
+]

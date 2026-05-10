@@ -1,0 +1,67 @@
+DATOS.DO — END TO END PLAN
+══════════════════════════════════════════════════════════
+
+PHASE 0 — SETUP (one time, you're almost done)
+──────────────────────────────────────────────
+  ✅ Folder created       /Users/manuelfernandez/datos-do
+  ✅ Files scaffolded     README, CLAUDE.md, scripts, HTML shells
+  🔄 GitHub auth          gh auth login  ← YOU ARE HERE
+  ⬜ Repo live            github.com/ManuelFPena/datos-do
+  ⬜ D3 downloaded        shared/d3.v7.min.js
+
+
+PHASE 1 — DATA PIPELINE (get the raw numbers into clean JSON)
+──────────────────────────────────────────────────────────────
+  ⬜ Download             World Bank API → data/raw/spending.json
+  ⬜ Download             PISA scores   → data/raw/pisa-lac.csv
+  ⬜ Run script           clean-spending.py → data/processed/spending-gdp.json
+  ⬜ Run script           clean-pisa.py    → data/processed/pisa-lac-scores.json
+
+  Result: two clean JSON files the charts will read from
+
+
+PHASE 2 — PROTOTYPE IN OBSERVABLE (draw the charts, no pressure)
+─────────────────────────────────────────────────────────────────
+  ⬜ Open observablehq.com → new notebook
+  ⬜ Story 1: load spending JSON, build annotated line chart
+  ⬜ Story 2: load PISA JSON, build slope chart (2018 → 2022)
+  ⬜ Iterate until both look right
+
+  Result: working D3 chart code you can see and tweak live
+
+
+PHASE 3 — PORT TO THE SITE (move Observable code into the project)
+───────────────────────────────────────────────────────────────────
+  ⬜ Paste Observable code into Claude Code
+  ⬜ Claude Code ports it to stories/4pct-moment/chart.js
+  ⬜ Claude Code ports it to stories/pisa-trajectory/chart.js
+  ⬜ Test locally         python3 -m http.server 8080
+                          → open localhost:8080 in browser
+
+  Result: both stories render correctly on your machine
+
+
+PHASE 4 — PUBLISH (put it on the internet)
+───────────────────────────────────────────
+  ⬜ git add + commit + push
+  ⬜ GitHub Pages on      → Settings → Pages → deploy from main
+  ⬜ Site live at         manuelFPena.github.io/datos-do
+
+  Result: public URL you can share
+
+
+PHASE 5 — ITERATE (ongoing)
+────────────────────────────
+  ⬜ Add prose / annotations to each story
+  ⬜ Mobile testing + fixes
+  ⬜ Add Story 3, 4... (literacy, pipeline, gender gap)
+
+
+══════════════════════════════════════════════════════════
+TOOLS USED AT EACH PHASE
+
+  Terminal          phases 0, 1, 4      (git, curl, python)
+  Claude Code       phases 1, 3         (scripts, porting charts)
+  Observable        phase 2             (prototype charts)
+  Browser           phases 3, 4, 5      (preview + live site)
+══════════════════════════════════════════════════════════
