@@ -131,6 +131,18 @@ body {
   line-height: 1.4;
 }
 
+.chart-note a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--border-light);
+  text-underline-offset: 2px;
+}
+
+.chart-note a:hover {
+  color: var(--text-primary);
+  text-decoration-color: var(--text-muted);
+}
+
 /* ── Homepage ── */
 
 .site-header {
