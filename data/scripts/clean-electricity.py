@@ -1,0 +1,95 @@
+import json
+import os
+
+data = {
+    "losses_timeseries": [
+        {"year": 1991, "losses_pct": 38.0, "subsidy_usd_bn": 0.1,
+         "annotation": "40% de energía no servida"},
+        {"year": 1995, "losses_pct": 35.0, "subsidy_usd_bn": 0.2},
+        {"year": 1998, "losses_pct": 32.0, "subsidy_usd_bn": 0.3,
+         "annotation": "Intento de privatización"},
+        {"year": 2000, "losses_pct": 38.0, "subsidy_usd_bn": 0.4},
+        {"year": 2002, "losses_pct": 28.0, "subsidy_usd_bn": 0.5,
+         "annotation": "Reforma: pérdidas caen a 11%"},
+        {"year": 2003, "losses_pct": 35.0, "subsidy_usd_bn": 0.6,
+         "annotation": "Crisis bancaria — colapso del sistema"},
+        {"year": 2005, "losses_pct": 37.0, "subsidy_usd_bn": 0.7},
+        {"year": 2008, "losses_pct": 36.0, "subsidy_usd_bn": 1.0,
+         "annotation": "Subsidios superan $1B — 3% del PIB"},
+        {"year": 2010, "losses_pct": 35.0, "subsidy_usd_bn": 0.9},
+        {"year": 2012, "losses_pct": 34.0, "subsidy_usd_bn": 1.1},
+        {"year": 2014, "losses_pct": 33.0, "subsidy_usd_bn": 1.3},
+        {"year": 2016, "losses_pct": 31.0, "subsidy_usd_bn": 1.4},
+        {"year": 2018, "losses_pct": 30.0, "subsidy_usd_bn": 1.5},
+        {"year": 2019, "losses_pct": 29.0, "subsidy_usd_bn": 1.6},
+        {"year": 2020, "losses_pct": 28.5, "subsidy_usd_bn": 1.7},
+        {"year": 2021, "losses_pct": 27.0, "subsidy_usd_bn": 1.8,
+         "annotation": "85.7% hogares con 20-24h de luz — mejor década"},
+        {"year": 2022, "losses_pct": 28.0, "subsidy_usd_bn": 1.9},
+        {"year": 2023, "losses_pct": 29.0, "subsidy_usd_bn": 2.0,
+         "annotation": "Banco Mundial aprueba $625M en reformas"},
+        {"year": 2024, "losses_pct": 30.0, "subsidy_usd_bn": 2.0,
+         "annotation": "Apagón nacional — sistema colapsa de nuevo"},
+        {"year": 2026, "losses_pct": 30.0, "subsidy_usd_bn": 2.0,
+         "annotation": "Febrero 2026 — otro apagón nacional"}
+    ],
+    "lac_losses": [
+        {"country": "República Dominicana", "iso": "DO",
+         "highlight": True, "losses_pct": 29.0},
+        {"country": "Nicaragua", "iso": "NI",
+         "highlight": False, "losses_pct": 26.0},
+        {"country": "Guyana", "iso": "GY",
+         "highlight": False, "losses_pct": 24.0},
+        {"country": "Brasil", "iso": "BR",
+         "highlight": False, "losses_pct": 16.0},
+        {"country": "Argentina", "iso": "AR",
+         "highlight": False, "losses_pct": 14.0},
+        {"country": "Guatemala", "iso": "GT",
+         "highlight": False, "losses_pct": 14.0},
+        {"country": "Ecuador", "iso": "EC",
+         "highlight": False, "losses_pct": 13.0},
+        {"country": "Colombia", "iso": "CO",
+         "highlight": False, "losses_pct": 12.0},
+        {"country": "Perú", "iso": "PE",
+         "highlight": False, "losses_pct": 11.0},
+        {"country": "Panamá", "iso": "PA",
+         "highlight": False, "losses_pct": 11.0},
+        {"country": "Costa Rica", "iso": "CR",
+         "highlight": False, "losses_pct": 9.0},
+        {"country": "Chile", "iso": "CL",
+         "highlight": False, "losses_pct": 7.0},
+        {"country": "Uruguay", "iso": "UY",
+         "highlight": False, "losses_pct": 6.0},
+        {"country": "Promedio OCDE", "iso": "OECD",
+         "highlight": False, "losses_pct": 6.0,
+         "reference": True}
+    ],
+    "budget_comparison": [
+        {"year": 2014, "electricity_subsidy": 1.3,
+         "education": 2.8, "health": 1.8},
+        {"year": 2016, "electricity_subsidy": 1.4,
+         "education": 3.1, "health": 1.9},
+        {"year": 2018, "electricity_subsidy": 1.5,
+         "education": 3.3, "health": 2.0},
+        {"year": 2020, "electricity_subsidy": 1.7,
+         "education": 3.6, "health": 2.2},
+        {"year": 2022, "electricity_subsidy": 1.9,
+         "education": 3.9, "health": 2.4},
+        {"year": 2023, "electricity_subsidy": 2.0,
+         "education": 4.1, "health": 2.5}
+    ],
+    "solar_comparison": [
+        {"label": "3 años de subsidios eléctricos",
+         "value": 6.0, "type": "cost", "color": "#e67e22"},
+        {"label": "Costo solar para 2.8M hogares",
+         "value": 5.25, "type": "solar", "color": "#27ae60"},
+        {"label": "Ahorro anual al eliminar subsidio",
+         "value": 2.0, "type": "saving", "color": "#2471a3"}
+    ]
+}
+
+out_path = os.path.join(os.path.dirname(__file__), "../processed/electricity.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print(f"Wrote {out_path}")

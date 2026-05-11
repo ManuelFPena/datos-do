@@ -435,6 +435,7 @@ body {
 .story-badge--economia     { color: #27ae60; }
 .story-badge--transporte   { color: #e67e22; }
 .story-badge--desigualdad  { color: #8e44ad; }
+.story-badge--energia      { color: #e67e22; }
 
 .story-content {
   min-width: 0;
