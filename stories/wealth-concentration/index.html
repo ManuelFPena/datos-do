@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Peso que No Llega — datos.do</title>
+  <link rel="stylesheet" href="../../shared/style.css">
+  <link rel="stylesheet" href="./story.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="../../index.html" class="nav-logo">datos.do</a>
+    <div class="nav-links">
+      <a href="../../index.html">Inicio</a>
+      <a href="../../about.html">Sobre</a>
+    </div>
+  </nav>
+
+  <header class="story-header">
+    <div class="dek">Economía · Desigualdad · Análisis</div>
+    <h1>El Peso que No Llega</h1>
+    <p class="subhed">La República Dominicana crece a 5% anual. El 1% más rico captura el 30% de todo ese crecimiento. El problema no es solo la desigualdad — es que ni siquiera sabemos qué tan profunda es realmente.</p>
+    <p class="byline">Manuel Fernández · 2026</p>
+  </header>
+
+  <!-- ── BEAT 1: La pregunta que hacen todos ── -->
+
+  <section class="story-body">
+    <h2 class="beat-hed">La pregunta que hacen todos</h2>
+
+    <p>"¿Dónde está ese crecimiento?" Es la pregunta que se repite en los colmados, en las redes sociales, en los taxis de Santo Domingo. El FMI publica cifras récord. El Banco Central celebra. Y la mayoría de los dominicanos siente que algo no cuadra.</p>
+
+    <p>La respuesta no está escondida. Está en los datos — si sabes dónde mirar.</p>
+
+    <p>Según el World Inequality Database, construido por un consorcio internacional de académicos que combina encuestas de hogares, registros fiscales y cuentas nacionales, el 1% más rico de la República Dominicana captura el 30.5% del ingreso nacional. El 10% más rico se lleva el 55%. El 50% más pobre recibe el 17%.</p>
+
+    <p>Eso significa que de cada 100 pesos generados en la economía dominicana, 30 van al mismo 1% de la población. Y 17 se reparten entre la mitad más pobre del país.</p>
+  </section>
+
+  <!-- ── BEAT 2: Chart 1 ── -->
+
+  <section class="story-body">
+    <h2 class="beat-hed">30 centavos de cada peso — para el 1%</h2>
+    <p>La mejor manera de entender la concentración no es con el Gini — es con los percentiles. ¿Cuánto del ingreso nacional recibe cada grupo?</p>
+  </section>
+
+  <section class="chart-section">
+    <div class="chart-headline">
+      <h3 class="chart-title">El 1% recibe más ingreso que el 50% más pobre — combinado</h3>
+      <p class="chart-subhead">30.5% para el 1% más rico; apenas 17% para la mitad de la población.</p>
+    </div>
+    <div id="chart-1"></div>
+    <p class="chart-note">Fuente: <a href="https://wid.world/country/dominican-republic/" target="_blank" rel="noopener noreferrer">World Inequality Database (WID)</a> · Participación en el ingreso nacional pretax · circa 2022</p>
+  </section>
+
+  <section class="story-body">
+    <p>El top 1% de la República Dominicana — unas 85,000 personas sobre una población adulta de 8.5 millones — recibe más ingreso que el 50% más pobre combinado: 30.5% versus 17%. No es un error tipográfico.</p>
+  </section>
+
+  <!-- ── BEAT 3: Chart 2 ── -->
+
+  <section class="story-body">
+    <h2 class="beat-hed">La RD supera incluso a Estados Unidos en concentración del ingreso en el 1%</h2>
+    <p>Comparada globalmente, la concentración dominicana es extraordinaria. El top 1% en Estados Unidos — frecuentemente citado como símbolo de desigualdad extrema — captura el 19% del ingreso nacional. En la República Dominicana, captura el 30.5%.</p>
+    <p>Brasil, México y Colombia tienen niveles altos — entre 27% y 28% para el top 1%. La RD los supera. Uruguay y Costa Rica, los países más igualitarios de la región, tienen tasas de 16% y 18%.</p>
+  </section>
+
+  <section class="chart-section">
+    <div class="chart-headline">
+      <h3 class="chart-title">La RD tiene la mayor concentración del top 1% de toda la comparación regional</h3>
+      <p class="chart-subhead">Cada línea muestra la brecha entre el top 1% y el top 10%. La RD encabeza ambas métricas.</p>
+    </div>
+    <div id="chart-2"></div>
+    <p class="chart-note">Fuente: <a href="https://wid.world/" target="_blank" rel="noopener noreferrer">World Inequality Database (WID)</a> · Participación del top 1% y top 10% en el ingreso nacional · circa 2022–2023</p>
+  </section>
+
+  <!-- ── BEAT 4: Chart 3 ── -->
+
+  <section class="story-body">
+    <h2 class="beat-hed">Nacer sin educación es casi garantía de quedarse en la informalidad</h2>
+    <p>Parte de la explicación de por qué la desigualdad persiste está en el mercado laboral. En la República Dominicana, el 54.7% de los trabajadores están en la economía informal — sin contrato, sin seguridad social, sin pensión.</p>
+    <p>Pero la informalidad no es aleatoria. Está brutalmente correlacionada con la educación: el 88% de los trabajadores sin educación formal están en empleos informales. Solo el 27% de los universitarios lo están.</p>
+  </section>
+
+  <section class="chart-section">
+    <div class="chart-headline">
+      <h3 class="chart-title">Más educación = más formalidad: de 12% formal sin escolaridad a 73% con universidad</h3>
+      <p class="chart-subhead">La informalidad cae 61 puntos entre el nivel más bajo y el más alto de educación.</p>
+    </div>
+    <div id="chart-3"></div>
+    <p class="chart-note">Fuente: <a href="https://amcham.org.do/wp-content/uploads/2025/03/Dominican-Republic-Informal-Economy-Myths-Realities-and-Solutions.pdf" target="_blank" rel="noopener noreferrer">Banco Central de la República Dominicana (2024)</a> · <a href="https://statista.com/statistics/1039939/informal-employment-share-dominican-republic" target="_blank" rel="noopener noreferrer">ILO via Statista (2024)</a> · Porcentaje de empleo formal vs informal por nivel educativo, 2024</p>
+  </section>
+
+  <section class="story-body">
+    <p>El círculo se cierra: la informalidad produce ingresos bajos, los ingresos bajos limitan el acceso a educación de calidad, y la educación limitada condena al trabajador a la informalidad. Es el mismo ciclo que vimos en la historia de educación — pero medido desde el mercado laboral.</p>
+  </section>
+
+  <!-- ── BEAT 5: Chart 4 ── -->
+
+  <section class="story-body">
+    <h2 class="beat-hed">El gobierno no recauda lo suficiente — y los que más ganan son los que menos pagan</h2>
+    <p>Si el 1% captura el 30% del ingreso pero el gobierno solo recauda el 13.2% del PIB en impuestos — uno de los niveles más bajos de América Latina — hay una pregunta obvia: ¿quién no está pagando?</p>
+    <p>En 2017, la evasión fiscal le costó al Estado dominicano el equivalente al 9.5% del PIB en ingresos perdidos. El 63% del impuesto sobre la renta se evade. El 47% del IVA. La economía informal representa el 34% del PIB total — pero aporta proporcionalmente mucho menos al fisco.</p>
+  </section>
+
+  <section class="chart-section">
+    <div class="chart-headline">
+      <h3 class="chart-title">La RD recauda menos que la mitad del promedio OCDE — y pierde 9.5 puntos del PIB en evasión</h3>
+      <p class="chart-subhead">Con lo que se evade, el Estado podría duplicar su recaudación actual.</p>
+    </div>
+    <div id="chart-4"></div>
+    <p class="chart-note">Fuente: <a href="https://documents1.worldbank.org/curated/en/579421623998524780/pdf/Dominican-Republic-Tax-System-Review.pdf" target="_blank" rel="noopener noreferrer">World Bank Tax System Review — Dominican Republic (2021)</a> · <a href="https://www.coface.com/news-economy-and-insights/business-risk-dashboard/country-risk-files/dominican-republic" target="_blank" rel="noopener noreferrer">Coface Country Risk Report (2024)</a></p>
+  </section>
+
+  <!-- ── BEAT 6: Lo que los datos no pueden capturar ── -->
+
+  <section class="story-body">
+    <h2 class="beat-hed">Lo que los datos no pueden capturar</h2>
+
+    <p>Hay una última capa a esta historia — y es quizás la más importante. Los datos que usamos para medir la desigualdad dominicana probablemente la subestiman.</p>
+
+    <p>Según el World Inequality Lab, las encuestas de hogares en la República Dominicana capturan apenas el 40% del ingreso nacional bruto. Eso significa que el 60% de toda la riqueza generada en el país es invisible para los instrumentos de medición estándar. El ingreso del top 1% en los registros fiscales es entre 4 y 5 veces mayor que lo que las encuestas reportan para ese grupo.</p>
+
+    <p>Dicho de otra manera: si la desigualdad medida ya es la más alta de América Latina, la desigualdad real probablemente sea peor.</p>
+
+    <p>No es un argumento para el pesimismo. Es un argumento para tomarse los datos en serio — y para construir los sistemas fiscales, laborales y educativos que permitan medirla, y eventualmente reducirla.</p>
+
+    <p>La República Dominicana tiene las tasas de crecimiento de una economía emergente exitosa. Tiene la distribución de ingreso de una economía que aún no ha decidido para quién crece.</p>
+
+    <div class="methodology-note">
+      <p class="sources-label">Nota metodológica</p>
+      <p style="font-size:0.75rem;color:#888;line-height:1.6;margin-top:0.5rem;">Los datos de participación en el ingreso provienen del World Inequality Database (WID), que combina encuestas de hogares, registros fiscales y cuentas nacionales siguiendo la metodología DINA (Distributional National Accounts). Son distintos de los datos de Gini del Banco Mundial, que se basan únicamente en encuestas de hogares. Ambas fuentes son válidas pero miden cosas distintas — el WID captura mejor la concentración en la cima.</p>
+    </div>
+  </section>
+
+  <script type="module">
+    import { drawChart1, drawChart2, drawChart3, drawChart4 } from './chart.js';
+
+    const res  = await fetch('./data.json');
+    const data = await res.json();
+
+    drawChart1(document.getElementById('chart-1'), data.income_distribution);
+    drawChart2(document.getElementById('chart-2'), data.global_comparison);
+    drawChart3(document.getElementById('chart-3'), data.informality_education);
+    drawChart4(document.getElementById('chart-4'), data.tax_gap);
+  </script>
+
+</body>
+</html>

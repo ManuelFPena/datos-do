@@ -1,5 +1,38 @@
 /* Inequality story — accent overrides */
 
+.related-story {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: #f7f0fc;
+  border-left: 3px solid #8e44ad;
+  border-radius: 0 4px 4px 0;
+}
+
+.related-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #8e44ad;
+  margin-bottom: 0.4rem;
+}
+
+.related-story a {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.related-story a:hover {
+  color: #8e44ad;
+  text-decoration: underline;
+}
+
+
 .beat-hed {
   font-family: Georgia, serif;
   font-size: 1.35rem;
